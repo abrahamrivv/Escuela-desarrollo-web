@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="Inicio.html"><img class="header__img" src="images/Logo Bee4.png" alt=""></a>
+
+        <div class="main2">
+            <input class="input" type="text" placeholder="Buscar...">
+        </div>
+
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="https://static.wikia.nocookie.net/youtubepedia/images/0/00/Vejetasietesietesiete.jpg/revision/latest?cb=20200509232029&path-prefix=es" alt="">
+                <p></p>
+            </div>
+                <ul>
+                    <li><a href="perfil.html">Cuenta</a></li>                    
+                    <li><a href="prelive.html">Transmitir en vivo</a></li>
+                    <li><a href="EditProfile.html">Editar cuenta</a></li>
+                    <li><a href="login.html">Cerrar sesión</a></li>
+                </ul>
+        </div>
+    </header>
+
+    <section class="chat__container" id="chat-container">
+        <div class="title__chat--container">
+
+            <p class="title_chat">Chat en directo  <a class="shop" href="#"><i class="fas fa-shopping-bag"></i></a></a></p>
+            
+        </div>
+
+        <div class="chat__logs" id="chat-window">
+            <p class="chat_message" id="output"></p>
+        </div>
+
+        <div class="send__items">
+            <input class="write_username" type="text" placeholder="Username" id="username">
+            <input class="write_message" type="text" placeholder="Escribe un mensaje" id="message">
+            <button class="btn_send" type="submit" name="enviar" value="Enviar" id="sumbit">Enviar</button>
+        </div>
+        <!-- <form class="send__items" id="message-form">
+            <input class="write_username" type="text" placeholder="Username" id="username">
+            <input class="write_message" type="text" placeholder="Escribe un mensaje" id="message">
+            <button class="btn_send" type="submit" name="enviar" value="Enviar" id="sumbit">Enviar</button>
+        </form> -->
+        
+    </section>
+    
+    <section class="info__container">
+
+        <iframe width="750" height="450" src="https://www.youtube.com/embed/PsHtLXIAEh0?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div class="share-info2">
+            <img class="bee_avatar" src="https://static.wikia.nocookie.net/youtubepedia/images/0/00/Vejetasietesietesiete.jpg/revision/latest?cb=20200509232029&path-prefix=es" alt="imagen de perfil">
+        </div>
+
+        <div class="share-title-container2">
+            <h1 class="share-title">Vegetta777</h1>
+            <button type="button" class="follow-button">Seguir</button>
+        </div>
+
+        <div class="datos_live">
+            <h1>Titulo del directo</h1>
+            <h4>Descripción del video <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, hic veritatis! Illum, totam possimus. Saepe culpa excepturi, ratione ducimus eaque doloribus, iste, odit laudantium voluptatum velit sit quaerat corporis animi lore.</h4>
+            <a href="#">Link de redirección ej. Tienda TANGAS las mejores tangas</a>
+            <a href="#"><button class="btn_redirect" type="submit">Ir a la tienda</button></a>
+        </div>
+
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js" charset="utf-8"></script>    
+<script src="chat.js" charset="utf-8"></script>
+</body>
+</html>

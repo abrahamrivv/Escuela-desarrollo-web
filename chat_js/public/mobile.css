@@ -1,0 +1,181 @@
+/*----------------------------------------------------LOGIN*/
+@media only screen and (max-width: 600px){
+    .header__img{
+        margin-left: 10px;
+    }
+
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+/*----------------------------------------------------REGISTER*/
+@media only screen and (max-width: 600px){
+    .header__img{
+        margin-left: 10px;
+    }
+
+    .register__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+/*----------------------------------------------------INICIO/FEED*/
+@media only screen and (max-width: 600px) {
+    .header__img{
+        margin-left: 10px;
+    }
+
+    .main__description--title {
+      font-size: 30px;
+    }
+  
+    .footer {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+/*----------------------------------------------------PRELIVE*/
+@media only screen and (max-width: 600px){
+    .header__img{
+        margin-left: 10px;
+    }
+
+    iframe{
+        width: 200px;
+        height: 150px;
+    }
+    
+    .button2{
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .bee_avatar{
+        margin-top: -120px;
+    }
+
+}
+
+/*----------------------------------------------------PERFIL*/
+@media only screen and (max-width: 600px){
+    .header__img{
+        margin-left: 10px;
+    }
+
+    .perfil{
+        margin-top: 150px;
+    }
+
+    .share-info .Bee-avatar img{
+        display: none;
+    }
+}
+/*----------------------------------------------------VISTAPREVIAV*/
+@media only screen and (max-width: 1000px){
+    body{
+        margin: 0px;
+        height: 800px;
+    }
+
+    .header__img{
+        margin-left: 10px;
+    }
+
+    .main2{
+        display: none;
+    }
+
+     iframe{
+        margin-top: -400px;
+        height: 250px;
+        margin-left: -100px;
+        width: 200%;
+        margin-bottom: 40px;
+    }
+
+    .share-info2{
+        display: none;
+    }
+
+    .share-title-container2{
+        display: none;
+    }
+
+    .datos_live{
+        display: none
+    }
+
+    .chat__container {
+        margin-top: 230px;
+        margin-left: 0%;
+        width: 100%;
+        border-radius: 0px;
+        height: 572px;
+    }
+    
+    .chat__container .title_chat{
+        border-radius: 0px;
+    }
+
+    .chat__logs{
+        width: 90%;
+    }
+
+    .chat__logs::-webkit-scrollbar{
+        display: none;
+        overflow-y: unset;
+      }
+      
+      .chat__logs::-webkit-scrollbar-thumb{
+        display: none;
+        overflow-y: unset;
+      }
+      
+      .chat__logs::-webkit-scrollbar-track{
+        display: none;
+        overflow-y: unset;
+      }
+
+      .chat__container .title__chat--container .pause{
+        color: red; 
+        /* margin-left: 10px; */
+        display: contents;
+      }
+      
+      .chat__container .title__chat--container .pause:hover{
+        color: rgb(148, 7, 7);
+      }
+      
+      .chat__container .title__chat--container p a.shop{
+        color: #F39C12;
+        margin-left: 50px;
+        display: contents;
+      }
+      
+      .chat__container .title__chat--container .shop:hover{
+        color: #bd790c;
+      }
+
+      .send__items .write_message{
+          width: 67%;
+      }
+}

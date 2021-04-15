@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE ETIQUETA IMG, FIGURE Y VIDEO</title>
+</head>
+<body>
+    <main>
+        <section>
+            <figure> <!-- Esta etiqueta semanticamente es mejor que un div para poner una imagen dentro -->
+                <img src="https://i.ytimg.com/vi/tJTXfWEbfl4/maxresdefault.jpg" alt="VegettaYWILLY">
+                <figcaption>Vegetta y WILLY</figcaption><!-- esta etiqueta muestra una descricón de la imagen -->
+            </figure>
+        </section>
+
+        <section>
+            <video controls preload="auto">
+                <source src="#">
+            </video>
+        </section>
+        <!-- La etiqueta <video>, tiene algunos atributos como:
+            controls: agrega al video los controles necesarios para reproducir, pausar y adelantar.
+            preload = auto: hace que el navegador descargue el video, en el momento en el que se acceda a la página.
+            preload="metadata" Carga previa de los metadatos
+            preload="none" No existe carga de vídeo previa
+            (src="") se agrega "#t10,60" eso significa que empieza en el segundo 10 y acaba en el segundo 60
+            La etiqueta <source>, se puede colocar dentro de una etiqueta <video> varias veces, para especificar diferentes rutas. Esto para asegurar que cualquier navegador pueda mostrar el video. -->
+
+                <!-- OTRA EXPLICACION PARA SRC Para darle un tiempo inicio a fin lo hacemos con el # despues t="como quiero
+            que inicie" lo separo con , despues le doy el otro tiempo donde quiero que
+          finalice-->
+
+                Documentación : https://www.w3schools.com/tags/tag_video.asp
+                Atributos de una etiqueta source
+                Documentación : https://www.w3schools.com/tags/tag_source.asp
+    </main>
+</body>
+</html>
