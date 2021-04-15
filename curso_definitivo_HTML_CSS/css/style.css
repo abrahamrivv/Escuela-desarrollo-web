@@ -1,0 +1,17 @@
+/* por elemento */
+h1{
+    color: red;
+}
+
+/* por class */
+.parrafo{
+    font-size: 30px;
+    color: blue;
+}
+
+/* por id */
+
+#texto{
+    color: blueviolet;
+    font-size: 20px;
+}

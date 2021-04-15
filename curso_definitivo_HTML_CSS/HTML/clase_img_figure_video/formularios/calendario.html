@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS, INPUT, AUTOCOMPLETE, SELECT</title>
+</head>
+<body>
+    <!-- <form action="">
+        <label for="hora">
+            <span>hora</span>
+            <input type="time" id="hora" name="hora">
+        </label>
+        <label for="dia">
+            <span>día</span>
+            <input type="date" id="dia" name="dia">
+        </label>
+        <label for="semana">
+            <span>semana</span>
+            <input type="week" id="semana" name="semana">
+        </label>
+        <label for="mes">
+            <span>mes</span>
+            <input type="month" id="mes" name="mes">
+        </label>
+        <input type="submit">
+        <label for="calendar">
+            <span>calendario</span>
+            <input type="datetime-local" id="calendar" name="calendar">
+        </label>
+    </form> -->
+    <form action="">
+        <label for="name">
+            <span>tu nombre</span>
+            <input type="text" id="name" name="name" autocomplete="name" required> <!-- "required" es para mencionar que se necesita llenar el input -->
+        </label>
+        <label for="email">
+            <span>tu correo</span>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+        </label>
+        <label for="country">
+            <span>tu país</span>
+            <input type="text" id="country" name="country" autocomplete="country" required>
+        </label>
+        <label for="cp">
+            <span>cp</span>
+            <input type="text" id="cp" name="cp" autocomplete="postal-code" required>
+        </label>
+        <label for="">
+            <span></span>
+            <input type="text">
+        </label>
+    </form>
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Atributos/autocomplete">todos los valores de autocomplete que el navegador te ayuda</a>
+
+    <!-- <select name="cursos" id="">
+        <option value="">css</option>
+        <option value="">js</option>
+        <option value="" selected>python</option>
+        Etiqueta <select>: Esta permite crear la lista, con las etiquetas <option>:
+    </select> -->
+
+    <!-- Etiqueta <input list = “”>: De este modo, se puede utilizar una etiqueta <datalist> con etiquetas <option> dentro del input. De este modo, el usuario puede escribir dentro del input, y filtrar los resultados de la lista: -->
+    <input list="cursos">
+    <datalist id="cursos">
+        <option value="js"></option>
+        <option value="css"></option>
+        <option value="python"></option>
+    </datalist>
+
+    <!-- input type submit vs button 
+    input type submit = lo utilizaremos solo en los formularios
+
+Button = lo utilizaremos en cualquier otro tipo de boton dentro de nuestro proyecto-->
+    <input type="submit" value="PICALEEEEE">
+    <button type="submit">PICALEE</button>
+</body>
+</html>
