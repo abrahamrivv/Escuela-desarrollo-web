@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.main-nav {
+    height: 50px;
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    background-color: #13a4a4;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover {
+    color: tomato;
+}
+
+.main-nav__item a:active {
+    color: blue;            
+}
+
+.main-nav__item::after {
+    content: " | ";
+    color: chartreuse;
+}
+
+/* .main-nav__item a:active esto es una pseudo clase
+.main-nav__item::after esto es un pseudo elemento */
