@@ -1,0 +1,26 @@
+/* El combinador hermano adyacente ( +) separa dos selectores y 
+coincide con el segundo elemento solo si sigue
+inmediatamente al primer elemento, 
+y ambos son hijos del mismo padre element. 
+más simple es "a todos los p cerca de h2 ponlos de color rojo"*/
+/* h2 + p {
+    color: red;  
+} */
+
+
+/* general sibling combinator (~) separa dos selectores y coincide con el segundo elemento solo si sigue al primer elemento (aunque no necesariamente inmediatamente), y ambos son hijos del mismo elemento padre .
+"a los p que tengan como hermano general h2 serán color rojo"
+https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator
+h2 ~ p {
+    color: red;
+} */
+
+/* combinador child = si es hijo directo de un div, se pintará color eojo el p */
+/* div > p {
+    color: red;
+} */
+
+/* combinador descendiente = todas las etiquetas p dentro de un div recibirán los estilos */
+div p {
+    color: red;
+}

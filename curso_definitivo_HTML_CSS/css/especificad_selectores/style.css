@@ -1,3 +1,10 @@
+/* Usar solo ID puede causar problemas, solo usar clases , los ID sirven para JS */
+/* Mandamientos sacados de https://developer.mozilla.org/es/docs/Web/CSS/Especificidad
+
+1.- Busca siempre una manera de emplear la especificidad antes de considerar el uso de !important.
+2 .- Usa !important solo en declaraciones específicas de CSS que sobrescriban CSS externo (de librerías externas como Bootstrap o normalize.css).
+3.- Nunca uses !important cuando estés intentando escribir un plugin/mashup.
+4.- Nunca uses !important en todo el código CSS. */
 *{
     box-sizing: border-box;
     margin: 0;

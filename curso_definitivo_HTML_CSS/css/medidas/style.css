@@ -1,0 +1,81 @@
+/* medida absoluta: el valor de este no cambia y siempre sera el mismo asi la pagina cambie su tamaño, las medidas absolutas son:
+
+mm = milimetros
+cm = centimetros
+in = pulgada
+pc = picas
+px = pixel
+
+
+las medidas relativas: estas medidas heredan el tamaño o se basan en algun tamaño que se alla seleccionado y el valor ira cambiando segun si la pagina cambia de tamaño, las medidas relativas son :
+
+%
+em
+rem
+
+Medidas absolutas
+Su valor se encuentra definido en términos concretos y de manera medible. Esto quiere decir que no depende de otro valor de referencia, ni del contexto.
+
+mm: milímetros.
+cm: centímetros.
+in: pulgada (“inches”, en inglés). Una pulgada equivale a 2.54 centímetros.
+pt: puntos. Un punto equivale a 1 /72 de pulgada, es decir, unos 0.35 milímetros.
+pc: picas. Una pica equivale a 12 puntos, o aproximadamente a 4.23 milímetros.
+px: pixel. Es la unidad mínima de resolución de la pantalla. En realidad suele considerársela una unidad absoluta, relativa o híbrida dependiendo del criterio que se analice.
+Si analizamos que el pixel es una división física de la pantalla podríamos decir que corresponde definirla como unidad absoluta. Sin embargo, en los diferentes dispositivos estos pixeles tienen variaciones de tamaño, que aunque son mínimas y a veces imperceptibles, dan pie a que algunos autores la consideren unidad relativa.
+
+La principal ventaja de las unidades absolutas es que su valor es el que está expresado y el que se va a aplicar, no hay que hacer cálculos intermedios. Sin embargo, a pesar de esta aparente ventaja, no son las más utilizadas ya que resultan poco adaptables a la multiplicidad de dispositivos.
+
+Unidades relativas
+Las unidades relativas no son valores exactos sino que se calculan a partir de otro valor de referencia. A pesar de parecer más difíciles de calcular son las más utilizadas en el diseño de sitios web responsive por su adaptabilidad a los diferentes dispositivos.
+
+Porcentaje (%), es una de las unidades relativas más utilizadas. Su valor está calculado siempre en base a otro elemento. Si lo aplicamos sobre una fuente es relativo al tamaño de la fuente declarada en el contexto, pero si lo aplicamos al width de un elemento entonces es relativo al ancho de su contenedor.
+
+Unidades relativas a la tipografía
+em: unidad relativa al tamaño de texto definido en un determinado contexto. El em es una unidad que proviene del diseño tipográfico y equivale al espacio que ocupa el ancho de una letra M (“m” mayúscula) de un determinado cuerpo y alfabeto. El em hace referencia al tamaño de letra que se está usando.
+
+Cuando se utiliza la unidad em, es imprescindible conocer el valor de referencia, de lo contrario saber que un texto tiene 1em ó 5em no nos dice realmente el tamaño de la letra.
+
+Cuando se asigna una medida en ems, su referencia es el tamaño de letra del primer elemento contenedor que tenga establecido un tamaño de letra. */
+
+/* main{
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
+
+p {
+    font-size: 16px;
+} */
+
+/* Medidas EM em: va a tomar el tamaño de fuente que tenga el padre directo, o en su defecto, a su ancestro más próximo que tenga un tamaño declarado.*/
+
+/* .text-container{
+    font-size: 1.5em;
+} */
+
+/* Medidas REM (más recomendada que em) */
+/* REM : funciona igual que el em, con la diferencia que es relativo al valor de la fuente del elemento html, y no tiene en cuenta el valor heredado o del elemento que lo contiene.
+
+Por defecto el html viene con un tamaño de fuente de 16px asi que siempre
+.
+1 REM = 16PX
+.
+Si queremos aplicar rem de una forma mas sencilla para no tener que hacer tantos calculos asemos lo siguiente
+.
+vamos a reescribir en css nuestro html */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+/* esto lo que hara es darle a el html un valor de 10px ya que 16px - 62.5% = 10px
+
+ahora si por ejemplo a una etiqueta le asignamos 2rem este hara referencia a 20px, o si por ejemplo le damos un valor de 1.5rem su valor sera de 15px */
+p{
+    font-size: 1.6rem;
+}
