@@ -1,0 +1,32 @@
+/* En esta clase vimos los 3 tipos de display Base.
+Los cuales fueron:
+
+Block: Estos toman el 100% del width, por lo que un elemento no puede posicionarse a un lado de el.
+Se le puede poner el width deseado, height deseado, añadir margin, padding sin problema. Pero recordando que ocupara este elemento todo el largo de una Fila por asi decirlo.
+
+Inline: Estos elementos solo ocuparan el ancho dependiento de su contenido. Por lo tanto estos elementos si permiten que si un elemento cabe a lado suyo, se posicione este ahi.
+Las *desventajas es que no se les puede modificar el width, height, ni colocar margin u padding tanto top, como bottom.
+
+inline-block: Este tiene la combinación de los 2 anteriores. Haciéndolo un mejor candidato para usarlo.
+Permite modificar su width, height, añadirle margin, padding sin problemas y lo mejor es que mientras que haya espacio a un lado suyo, este permitirá posicionar mas elementos ahi. */
+
+.block-element {
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+}
+
+.nav {
+    background-color: greenyellow;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <p>
+            Se debe optimizar para todos los dispositivos. Hay tiene que tener en claro un par de conceptos:
+
+            Break points: cuando la pantalla sea de cierto tamaño, se generará un cambio para reposicionar o redimensionar los contenedores.
+            Media Queries: son condicionales. No es la mejor práctica pero aplicándolo al CSS: @media (min-width: #;) {"código que se aplicará"} y se aplican para cada tamaño de dispositivo. El pixelaje dado será el break point.
+            Lo más importante es diseñar para movil. Por lo que se debe diseñar con mobile first. Es decir, primero diseñar para celular, luego un break point para tablet y finalmente un break point para PC.
+
+            Para aplicar media queries con buenas prácticas, hay que hacerlo en el header. Porque así solo se descarga el código necesario según el dispositivo, mientras que en CSS se descarga todo sin importar nada.
+
+            En la tag link se colocan los atributos href, rel y, a partir del segundo archivo, el break point media="screen and (min-width: #px". El style.css debe estar hecho para mobile. Luego se pueden crear otros archivos como tablet.css o desktop.css.
+
+            Mostly Fluid: El patrón Mostly fluid consiste, principalmente, en una cuadrícula fluida. Por lo general, en las pantallas grandes o medianas se mantiene el mismo tamaño y simplemente se ajustan los márgenes en las más anchas.
+            Column drop: En el caso de los diseños con varias columnas de ancho completo, durante el proceso de colocación de columnas éstas únicamente se colocan de forma vertical debido a que el ancho de la ventana es demasiado reducido para el contenido.
+            Layout shifter: El patrón Layout shifter es el más adaptable, ya que posee varios puntos de interrupción en diferentes anchos de pantalla.
+            Tiny tweaks: El patrón Tiny tweaks permite realizar pequeños cambios en el diseño, como ajustar el tamaño de la fuente, cambiar el tamaño de las imágenes o desplazar el contenido de maneras muy poco significativas.
+            Off canvas: En lugar de apilar contenido verticalmente, el patrón Off canvas coloca contenido menos usado (tal vez menús de navegación o de apps) fuera de la pantalla y solo lo muestra cuando el tamaño de la pantalla es suficientemente grande.
+
+        </p>
+    </main>
+</body>
+</html>

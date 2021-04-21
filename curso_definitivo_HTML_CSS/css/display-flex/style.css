@@ -1,0 +1,68 @@
+/* Mini guía de flexbox:
+
+Propiedades en contenedores padre:
+display:flex;
+flex-direccion: row | column | row-reverse | column-reverse
+flex-wrap: nowrap | wrap | wrap-reverse
+Esta siguiente propiedad es un atajo para escribir el flex-direccion y el flex-wrap en una sola línea de código
+flex-flow: Primero escribes dirección | Luego escribes flex-wrap
+Posicionar horizontal
+justify-content: flex-star | flex-end | center | space-around | space-between
+Posicionar manera vertical
+aling-items: flex-star | flex-end | center | stretch | baseline
+
+aling-content: flex-star | flex-end | center | stretch | space-around | space-between “Aling-conten solo se utiliza varias filas de elementos, pero si es una sola línea usamos aling-items”
+
+Propiedades en elemento hijo
+
+order: ; Esto se utiliza para cambiar el orden de nuestros elementos sin cambiar el orden real semantico y correcto de html. Sencillamente colocando números.
+
+aling-self: aling-items: flex-star | flex-end | center | stretch | baseline “Muy importante, si en el padre del elemento tiene declarado flex-direccion:row; esta propiedad lo acomodara verticalmente. Y si es flex.direccion: column lo ordenara horizontalmente” */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    border: 0.3rem solid black;
+    display: flex;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: blueviolet;
+}
+
+.box3 {
+    background-color: burlywood;
+}
+
+.box4 {
+    background-color: cadetblue;
+}
+
+.box5 {
+    background-color: coral;
+}
+
+.box6 {
+    background-color: salmon;
+}
