@@ -1,41 +1,119 @@
 // código del cuadrado
 console.group("Cuadrados")
-const ladoCuadrado = 5
-console.log(`Los lados del cuadrado miden ${ladoCuadrado}cm`)
 
-const perimetroCuadrado = ladoCuadrado * 4
-console.log(`El perímetro del cuadrado es ${perimetroCuadrado}cm`)
+function perimetroCuadrado(lado) {
+    return lado * 4
+}
+perimetroCuadrado()
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado 
-console.log(`El área del cuadrado es ${areaCuadrado}cm2`)
+
+function areaCuadrado(lado){
+    return lado * lado
+}
+areaCuadrado()
+
 console.groupEnd()
 
 // código del triángulo
 console.group("Triángulos")
-const ladoTriangulo1 = 6
-const ladoTriangulo2 = 6
-const baseTriangulo = 4
-const alturaTriangulo = 5.5
 
-console.log(`Los lados del triángulo miden ${ladoTriangulo1}cm, ${ladoTriangulo2}cm y ${baseTriangulo}cm`)
-console.log(`La altura del triángulo mide ${alturaTriangulo}cm`)
+function perimetroTriangulo(lado1, lado2, base) {
+    return Number(lado1) + Number(lado2) + Number(base)
+}
+perimetroTriangulo()
 
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo
-console.log(`El perímetro del triánguo mide ${perimetroTriangulo}cm`)
+function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
+    if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
+        console.error("Los lados a y b no son iguales");
+    } else {
+        const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
+        const trianguloPequenoLadoBase = trianguloGrandeLadoA;
 
-const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2
-console.log(`El área del triángulo mide ${areaTriangulo}cm2`)
+        const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB * trianguloPequenoLadoB;
+        const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
+
+        const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+
+        const trianguloGrandeAltura = trianguloPequenoLadoA;
+        return trianguloGrandeAltura;
+    }
+}
+alturaTrianguloIsosceles()
+
+function areaTriangulo(baseTriangulo, alturaTriangulo){
+    return (baseTriangulo * alturaTriangulo) / 2
+} 
+areaTriangulo()
+
 console.groupEnd()
 
 // código círculo
 console.group("Círculos")
-const radio = 4
-const diametro = radio * 2
+
 const PI = Math.PI
 
-const circunferencia = PI * diametro
-console.log(`Circunferencia es igual a ${circunferencia}cm`)
+function diametroCirculo(radio){
+    return radio * 2
+}
+diametroCirculo()
 
-const areaCirculo = (radio * radio) * PI
-console.log(`Area del círculo es igual a ${areaCirculo}cm2`)
+function circunferencia(radio) {
+    const diametro = diametroCirculo(radio)
+    return PI * diametro
+}
+circunferencia()
+
+function areaCirculo(radio) {
+    return (radio * radio) * PI
+}
 console.groupEnd()
+
+// Aquí interactuamos con HTML
+
+// cuadrado
+ function calcularPerimetroCuadrado(){
+    const input = document.getElementById("ladoCuadrado")
+    const value = input.value
+
+    const perimetro = perimetroCuadrado(value)
+    alert(perimetro)
+ }
+
+
+ function calcularAreaCuadrado() {
+    const input = document.getElementById("ladoCuadrado")
+    const value = input.value
+
+    const area = areaCuadrado(value)
+    alert(area)
+ }
+
+//  triángulo
+
+function calcularPerimetroTriangulo(){
+    const ladoDerecho = document.getElementById("ladoDerecho")
+    const ladoIzquierdo = document.getElementById("ladoIzquierdo")
+    const base = document.getElementById("baseTriangulo")
+
+    const ladoD = ladoDerecho.value
+    const ladoI = ladoIzquierdo.value
+    const baseDelTriangulo = base.value
+
+    const perimetro = perimetroTriangulo(ladoD, ladoI, baseDelTriangulo)
+    alert(perimetro)
+}
+
+function calcularAreaTriangulo() {
+    const ladoDerecho = document.getElementById("ladoDerecho")
+    const ladoIzquierdo = document.getElementById("ladoIzquierdo")
+    const base = document.getElementById("baseTriangulo")
+
+    const ladoD = ladoDerecho.value
+    const ladoI = ladoIzquierdo.value
+    const baseDelTriangulo = base.value
+
+    const altura = alturaTrianguloIsosceles(ladoI, ladoD, baseDelTriangulo)
+
+    const area = areaTriangulo(baseDelTriangulo, altura)
+    alert(area)
+}   
