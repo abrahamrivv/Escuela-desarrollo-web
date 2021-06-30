@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+            <form>
+                <label for="Price">Escribe el precio de tu producto</label> <!-- es la forma formal de definir una etiqueta para un control de un formulario HTML. Este es el elemento más importante si deseas crear formularios accesibles porque cuando se implementan correctamente, los lectores de pantalla leen la etiqueta de un elemento de formulario junto con las instrucciones relacionadas, y esto además resulta muy útil para los usuarios videntes -->
+                <input id="Price" type="number">
+
+                <label for="cupon">Escribe el cupon de descuento de tu producto</label>
+                <input id="cupon" type="text">
+
+                <button type="button" onclick="obtenerDescuento()"> <!-- para evitar que el boton recargue la pagina y borre lo que escirben los usuarios, se usa el type="button" -->
+                    Cualcula cuanto pagarás:)
+                </button>
+
+                <p id="ResultPrice"></p>
+            </form>
+        </section>
+    </main>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
