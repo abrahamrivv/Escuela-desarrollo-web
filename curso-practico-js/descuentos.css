@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    font-size: 2.0rem;
+    background-color: purple;
+}
+
+header h1 {
+    margin: 20px auto;
+}
+
+.calculo{
+    font-size: 1.8rem;
+    margin: 10px;
+}
+
+
+.calculo input {
+    width: 40%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.button_calculo{
+    width: 40%;
+    height: 45px;
+    border: none;
+    border-radius: 2.5px;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: violet;
+}
+
+.button_calculo:hover{
+    background-color: rgb(224, 83, 224);
+}
+
+

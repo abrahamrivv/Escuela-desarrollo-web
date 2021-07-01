@@ -38,7 +38,7 @@ function obtenerDescuento(){
     const userCoupon = coupons.find(isCouponValueValid);
     
     if (!userCoupon) {
-        alert("El cupón " + userCouponValue + "no es válido");
+        alert(`El cupón ${cuponValue} no es válido`);
     } else {
         const descuento = userCoupon.discount;
         const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
