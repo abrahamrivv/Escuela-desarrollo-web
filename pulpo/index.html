@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este meta sirve para hacer SEO, lo que va aquí da más info en el navegador">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>FASE PULPO</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="menu_li--left"><img src="https://t2.ea.ltmcdn.com/es/images/7/6/2/cuantos_corazones_tiene_un_pulpo_25267_orig.jpg" alt=""></li>
+                <li class="menu_li--right"><input type="text" placeholder="clase"></li>
+                <li class="menu_li--right"><input type="text" placeholder="localidad"></li>
+                <li class="menu_li--right"><input class="li_input--date" type="date"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+        <section>
+            <div class="container-menu2">
+                <div class="content">
+                    <img class="pulpo" src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/btg/curiosidades.batanga.com/files/5-alucinantes-e-increibles-datos-sobre-los-pulpos-los-invertebrados-mas-listos-y-curiosos-que-existen-1.jpg" alt="">
+                    <nav>
+                        <a href="#">H</a>
+                        <a href="#">O</a>
+                        <a href="#">L</a>
+                    </nav>
+                    <a href="#" class="logout_btn">salir</a>
+                </div>
+            </div>
+            <section class="horizontal">
+                <section class="horizontal_graficas--1">
+                    <div class="sec1_grafica">
+                        <h3>Vehículos inflados</h3>
+                        <p>19/21</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="sec1_grafica">
+                        <h3>Entradas correctas</h3>
+                        <p>6/19</p>
+                        <p>31%</p>
+                    </div>
+                </section>
+                <section class="horizontal_graficas--2">
+                    <div class="sec2_grafica">
+                        <div class="cont-graf_sec2">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="sec2_grafica">
+                        <div class="cont-graf_sec2">
+                            <canvas id="myChart2" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </section>
+                <section class="horizontal_graficas--3">
+                    <div class="sec3_grafica--table">
+                        <table>
+                            <tr>
+                                <th class="color-trans">Icono</th>
+                                <th>Serial</th>
+                                <th class="color-trans">clase</th>
+                                <th>Días sin inflado</th>
+                                <th class="color-trans">Tendencia</th>
+                            </tr>
+                            <tr>
+                                <td class="color-trans">foto</td>
+                                <td>V20</td>
+                                <td class="color-trans">Remolque</td>
+                                <td>30</td>
+                                <td class="color-trans">Gráfica</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </section>
+            
+            <section class="vertical">
+                <section class="vertical_graficas--1">
+                    <div class="grafica_vertical">
+                        <div class="cont-graf">
+                            <canvas id="myChart3" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="grafica_vertical">
+                        <div class="cont-graf">
+                            <canvas id="myChart4" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="sec3_grafica">Tiempo promedio de inflado</div>
+                </section>
+            </section>
+        </section>
+
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            var ctx = document.getElementById('myChart2').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            var ctx = document.getElementById('myChart3').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            var ctx = document.getElementById('myChart4').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            </script>
+    </main>
+</body>
+</html>

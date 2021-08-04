@@ -1,0 +1,244 @@
+/* :root{
+
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+html{
+    font-size: 62.5%;
+    color: white;
+}
+
+/* MENÚ */
+header{
+    height: 55px;
+}
+
+.menu{
+    width: 100%;
+    float: left;
+}
+
+/* .menu ul {
+    margin-left: 10px;
+} */
+
+.menu ul .menu_li--left{
+    list-style: none;
+}
+
+.menu ul .menu_li--left img{
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
+    float: left;
+}
+
+.menu ul .menu_li--right{
+    float: right;
+    list-style: none;
+    text-align: left;
+    padding: 5px;
+}
+
+.menu ul .menu_li--right input {
+    margin-right: 10px;
+    /* margin-left: 10px; */
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.menu ul li .li_input--date{
+    width: 100px;
+    height: 15px;
+}
+
+/* MENÚ LATERAL */
+.container-menu2{
+    position: absolute;
+    width: 4%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.content{
+    width: 100%;
+    max-width: 100px;
+    background: black;
+    height: 100vh;
+    position: relative;
+}
+
+.content nav {
+    margin-top: 150px;
+    transform: translateY(15%);
+}
+
+.content .pulpo{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+}
+
+.content .logout_btn{
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+    margin-top: 250px;
+    border-left: 5px solid transparent;
+}
+
+.content nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    border-left: 5px solid transparent;
+}
+
+.content nav a:hover{
+    border-left: 5px solid white;
+    background: #1f1f1f;
+}
+
+/* PRIMERAS 2 GRÁFICAS */
+.horizontal{
+    margin-left: 54px;
+    width: 66%;
+    /* height: 150px; */
+    font-size: 1.3rem;
+    /* background-color: #590ad863; */
+}
+
+.horizontal .horizontal_graficas--1{
+    display: flex;
+    
+}
+
+.horizontal_graficas--1{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1_grafica{
+    width: 40%;
+    height: 150px;
+    margin: 0 20px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: black;
+}
+
+/* SEGUNDAS 2 GRÁFICAS */
+.horizontal_graficas--2{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2_grafica{
+    width: 40%;
+    height: 220px;
+    margin: 0 20px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.sec2_grafica .cont-graf_sec2{
+    width: 65%;
+}
+
+/* TERCERAS 2 GRÁFICAS */
+.horizontal_graficas--3{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec3_grafica--table{
+    width: 86%;
+    margin: 0 25px;
+    border-radius: 12px;
+    background: black;
+}
+
+.sec3_grafica--table table{
+    width: 100%;
+    height: 120px;
+}
+
+.sec3_grafica--table table .color-trans{
+    background: #1f1f1f;
+}
+
+.sec3_grafica--table table tr th {
+    color: white;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.sec3_grafica--table table tr td {
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    background-color: black;
+}
+
+/* SECCIÓN VERTICAL */
+.vertical{
+    width: 30%;
+    margin-top: -570px;
+    height: 602px;
+    float: right;
+    /* background-color: yellow; */
+}
+
+/* .vertical_graficas--1 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+} */
+
+.grafica_vertical{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.grafica_vertical .cont-graf{
+    width: 65%;
+}
+
+/* .grafica_vertical .cont-graf canvas {
+    align-self: center;
+} */
+
+.sec3_grafica{
+    width: 80%;
+    height: 85px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: black;
+}
