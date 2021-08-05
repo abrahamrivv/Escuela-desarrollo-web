@@ -12,7 +12,7 @@
     <header>
         <nav class="menu">
             <ul>
-                <li class="menu_li--left"><img src="https://t2.ea.ltmcdn.com/es/images/7/6/2/cuantos_corazones_tiene_un_pulpo_25267_orig.jpg" alt=""></li>
+                <li class="menu_li--left"><img src="static/Saved Pictures/Grupo 66.png" alt=""></li>
                 <li class="menu_li--right"><input type="text" placeholder="clase"></li>
                 <li class="menu_li--right"><input type="text" placeholder="localidad"></li>
                 <li class="menu_li--right"><input class="li_input--date" type="date"></li>
@@ -24,26 +24,52 @@
         <section>
             <div class="container-menu2">
                 <div class="content">
-                    <img class="pulpo" src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/btg/curiosidades.batanga.com/files/5-alucinantes-e-increibles-datos-sobre-los-pulpos-los-invertebrados-mas-listos-y-curiosos-que-existen-1.jpg" alt="">
+                    <img class="pulpo" src="static/Saved Pictures/Trazado 9.png" alt="">
                     <nav>
-                        <a href="#">H</a>
-                        <a href="#">O</a>
-                        <a href="#">L</a>
+                        <a href="#"><img src="static/Saved Pictures/dashboard.png" alt=""></a>
+                        <a href="#"><img src="static/Saved Pictures/truck.png" alt=""></a>
+                        <a href="#"><img src="static/Saved Pictures/settings.png" alt=""></a>
                     </nav>
-                    <a href="#" class="logout_btn">salir</a>
+                    <a href="#" class="logout_btn"><img src="static/Saved Pictures/enter.png" alt=""></a>
                 </div>
             </div>
             <section class="horizontal">
                 <section class="horizontal_graficas--1">
                     <div class="sec1_grafica">
                         <h3>Vehículos inflados</h3>
-                        <p>19/21</p>
-                        <p>90%</p>
+                        <div class="cont-horizontal">
+                            <div class="porcientos">
+                                <p class="divis">19/21</p>
+                                <p class="percent">90%</p>
+                            </div>
+                            <div class="flecha">
+                                <img src="static/Saved Pictures/Trazado 10.png" alt="">
+                                <p>50%</p>
+                            </div>
+                            <div class="graf-barras">
+                                <div class="cont_graf-barras">
+                                    <canvas id="bar1" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="sec1_grafica">
                         <h3>Entradas correctas</h3>
-                        <p>6/19</p>
-                        <p>31%</p>
+                        <div class="cont-horizontal">
+                            <div class="porcientos">
+                                <p class="divis">19/21</p>
+                                <p class="percent">90%</p>
+                            </div>
+                            <div class="flecha">
+                                <img src="static/Saved Pictures/Trazado 10.png" alt="">
+                                <p>50%</p>
+                            </div>
+                            <div class="graf-barras">
+                                <div class="cont_graf-barras">
+                                    <canvas id="bar2" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="horizontal_graficas--2">
@@ -69,7 +95,7 @@
                                 <th class="color-trans">Tendencia</th>
                             </tr>
                             <tr>
-                                <td class="color-trans">foto</td>
+                                <td class="color-trans"><img src="static/Saved Pictures/truck.png" alt=""></td>
                                 <td>V20</td>
                                 <td class="color-trans">Remolque</td>
                                 <td>30</td>
@@ -92,12 +118,90 @@
                             <canvas id="myChart4" width="400" height="400"></canvas>
                         </div>
                     </div>
-                    <div class="sec3_grafica">Tiempo promedio de inflado</div>
+                    <div class="sec3_grafica">
+                        <h3>Tiempo promedio de inflado</h3>
+                        <div class="tiempo">
+                            <img src="static/Saved Pictures/fast-time.png" alt="">
+                            <p>2.5 minutos</p>
+                        </div>
+                    </div>
                 </section>
             </section>
         </section>
 
         <script>
+            var ctx = document.getElementById('bar1').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            var ctx = document.getElementById('bar2').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
             var ctx = document.getElementById('myChart').getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'doughnut',

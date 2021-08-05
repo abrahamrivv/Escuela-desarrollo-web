@@ -33,7 +33,7 @@ header{
 }
 
 .menu ul .menu_li--left img{
-    width: 30px;
+    /* width: 30px; */
     height: 30px;
     margin-left: 80px;
     float: left;
@@ -79,14 +79,14 @@ header{
 }
 
 .content nav {
-    margin-top: 150px;
+    margin-top: 170px;
     transform: translateY(15%);
 }
 
 .content .pulpo{
     width: 20px;
     height: 20px;
-    padding: 20px;
+    padding: 16px;
 }
 
 .content .logout_btn{
@@ -94,14 +94,15 @@ header{
     text-decoration: none;
     padding: 12px;
     color: white;
-    margin-top: 250px;
+    margin-top: 240px;
     border-left: 5px solid transparent;
 }
 
 .content nav a {
     display: block;
+    margin-bottom: 9px;
     text-decoration: none;
-    padding: 20px;
+    padding: 6px;
     color: white;
     border-left: 5px solid transparent;
 }
@@ -139,6 +140,39 @@ header{
     padding: 5px;
     border-radius: 12px;
     background-color: black;
+}
+
+.sec1_grafica h3{
+    display: flex;
+    justify-content: center;
+    margin-top: -0.5px;
+}
+
+.sec1_grafica .cont-horizontal{
+    display: flex;
+}
+
+.sec1_grafica .porcientos .percent{
+    margin-top: -10px;
+}
+
+.sec1_grafica .porcientos{
+    margin-left: 80px;
+}
+
+.sec1_grafica .flecha{
+    margin-left: 25px;
+}
+
+.sec1_grafica .flecha p{
+    margin-top: -0.1px;
+    text-align: center;
+    color: orange;
+}
+
+.graf-barras{
+    width: 30%;
+    margin-left: 25px;
 }
 
 /* SEGUNDAS 2 GRÁFICAS */
@@ -239,6 +273,23 @@ header{
     height: 85px;
     margin: 0 auto;
     padding: 5px;
+    font-size: 1.2rem;
     border-radius: 12px;
     background-color: black;
+}
+
+.sec3_grafica h3{
+    display: flex;
+    justify-content: center;
+    margin-top: -0.5px;
+}
+
+.sec3_grafica .tiempo {
+    display: flex;
+    align-items: center;
+    margin-left: 91.2px;
+}
+
+.sec3_grafica .tiempo p{
+    margin-left: 15px;
 }
