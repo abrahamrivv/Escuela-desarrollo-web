@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: grey;
+    background-color: #363636;
 }
 
 html{
@@ -139,7 +139,7 @@ header{
     margin: 0 20px;
     padding: 5px;
     border-radius: 12px;
-    background-color: black;
+    background-color: #171717;
 }
 
 .sec1_grafica h3{
@@ -189,7 +189,7 @@ header{
     margin: 0 20px;
     padding: 5px;
     border-radius: 12px;
-    background-color: black;
+    background-color: #171717;
 }
 
 .sec2_grafica .cont-graf_sec2{
@@ -208,7 +208,7 @@ header{
     width: 86%;
     margin: 0 25px;
     border-radius: 12px;
-    background: black;
+    background: #171717;
 }
 
 .sec3_grafica--table table{
@@ -217,20 +217,20 @@ header{
 }
 
 .sec3_grafica--table table .color-trans{
-    background: #1f1f1f;
+    background: #212121;
 }
 
 .sec3_grafica--table table tr th {
     color: white;
     border-radius: 12px;
-    background-color: black;
+    background-color: #171717;
 }
 
 .sec3_grafica--table table tr td {
     text-align: center;
     color: white;
     border-radius: 12px;
-    background-color: black;
+    background-color: #171717;
 }
 
 /* SECCIÓN VERTICAL */
@@ -257,7 +257,7 @@ header{
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 12px;
-    background-color: black;
+    background-color: #171717;
 }
 
 .grafica_vertical .cont-graf{
@@ -275,7 +275,7 @@ header{
     padding: 5px;
     font-size: 1.2rem;
     border-radius: 12px;
-    background-color: black;
+    background-color: #171717;
 }
 
 .sec3_grafica h3{
